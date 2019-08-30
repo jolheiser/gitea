@@ -29,7 +29,7 @@ executable path, you will have to manage this yourself.
 
 **Note 2**: Go version 1.11 or higher is required. However, it is recommended to
 obtain the same version as our continuous integration, see the advice given in
-<a href='{{< relref "doc/advanced/hacking-on-gitea.en-us.md" >}}'>Hacking on
+<a href='{{< relref "/doc/advanced/hacking-on-gitea.en-us.md" >}}'>Hacking on
 Gitea</a>
 
 ## Download
@@ -77,7 +77,7 @@ git checkout v{{< version >}}  # or git checkout pr-xyz
 
 Since all required libraries are already bundled in the Gitea source, it's
 possible to build Gitea with no additional downloads apart from Make
-<a href='{{< relref "doc/advanced/make.en-us.md" >}}'>(See here how to get Make)</a>.
+<a href='{{< relref "/doc/advanced/make.en-us.md" >}}'>(See here how to get Make)</a>.
 Various [make tasks](https://github.com/go-gitea/gitea/blob/master/Makefile)
 are provided to keep the build process as simple as possible.
 

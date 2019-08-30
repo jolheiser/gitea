@@ -44,7 +44,7 @@ location. When launched manually, Gitea can be killed using `Ctrl+C`.
 
 ## Recommended server configuration
 
-**NOTE:** Many of the following directories can be configured using [Environment Variables]({{< relref "doc/advanced/specific-variables.en-us.md" >}}) as well!  
+**NOTE:** Many of the following directories can be configured using [Environment Variables]({{< relref "/doc/advanced/specific-variables.en-us.md" >}}) as well!  
 Of note, configuring `GITEA_WORK_DIR` will tell Gitea where to base its working directory, as well as ease installation.
 
 ### Prepare environment
@@ -82,7 +82,7 @@ chmod 770 /etc/gitea
 chmod 750 /etc/gitea
 chmod 644 /etc/gitea/app.ini
 ```
-If you don't want the web installer to be able to write the config file at all, it is also possible to make the config file read-only for the gitea user (owner/group `root:root`, mode `0660`), and set `INSTALL_LOCK = true`. In that case all database configuration details must be set beforehand in the config file, as well as the `SECRET_KEY` and `INTERNAL_TOKEN` values. See the [command line documentation]({{< relref "doc/usage/command-line.en-us.md" >}}) for information on using `gitea generate secret INTERNAL_TOKEN`.
+If you don't want the web installer to be able to write the config file at all, it is also possible to make the config file read-only for the gitea user (owner/group `root:root`, mode `0660`), and set `INSTALL_LOCK = true`. In that case all database configuration details must be set beforehand in the config file, as well as the `SECRET_KEY` and `INTERNAL_TOKEN` values. See the [command line documentation]({{< relref "/doc/usage/command-line.en-us.md" >}}) for information on using `gitea generate secret INTERNAL_TOKEN`.
 
 ### Configure Gitea's working directory
 
@@ -103,7 +103,7 @@ After the above steps, two options to run Gitea are:
 
 ### 1. Creating a service file to start Gitea automatically (recommended)
 
-See how to create [Linux service]({{< relref "run-as-service-in-ubuntu.en-us.md" >}})
+See how to create [Linux service]({{< relref "/doc/installation/run-as-service-in-ubuntu.en-us.md" >}})
 
 ### 2. Running from command-line/terminal
 
@@ -117,7 +117,7 @@ You can update to a new version of Gitea by stopping Gitea, replacing the binary
 The binary file name should not be changed during the update to avoid problems 
 in existing repositories. 
 
-It is recommended you do a [backup]({{< relref "doc/usage/backup-and-restore.en-us.md" >}}) before updating your installation.
+It is recommended you do a [backup]({{< relref "/doc/usage/backup-and-restore.en-us.md" >}}) before updating your installation.
 
 If you have carried out the installation steps as described above, the binary should 
 have the generic name `gitea`. Do not change this, i.e. to include the version number. 
@@ -133,7 +133,7 @@ Older Linux distributions (such as Debian 7 and CentOS 6) may not be able to loa
 Gitea binary, usually producing an error such as ```./gitea: /lib/x86_64-linux-gnu/libc.so.6:
 version `GLIBC\_2.14' not found (required by ./gitea)```. This is due to the integrated
 SQLite support in the binaries provided by dl.gitea.io. In this situation, it is usually
-possible to [install from source]({{< relref "from-source.en-us.md" >}}) without sqlite
+possible to [install from source]({{< relref "/doc/installation/from-source.en-us.md" >}}) without sqlite
 support.
 
 ### Running Gitea on another port

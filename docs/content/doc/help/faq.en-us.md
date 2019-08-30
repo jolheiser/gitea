@@ -16,7 +16,7 @@ menu:
 # Frequently Asked Questions
 
 This page contains some common questions and answers.  
-Also see [Support Options]({{< relref "doc/help/seek-help.en-us.md" >}})
+Also see [Support Options]({{< relref "/doc/help/seek-help.en-us.md" >}})
 
 * [Difference between 1.x and 1.x.x downloads](#difference-between-1-x-and-1-x-x-downloads)
 * [How to migrate from Gogs/GitHub/etc. to Gitea](#how-to-migrate-from-gogs-github-etc-to-gitea)
@@ -57,7 +57,7 @@ On the other hand, 1.x.x downloads should never change.
 ## How to migrate from Gogs/GitHub/etc. to Gitea
 To migrate from Gogs to Gitea:
 
-* [Gogs version 0.9.146 or less]({{< relref "doc/upgrade/from-gogs.en-us.md" >}})
+* [Gogs version 0.9.146 or less]({{< relref "/doc/upgrade/from-gogs.en-us.md" >}})
 * [Gogs version 0.11.46.0418](https://github.com/go-gitea/gitea/issues/4286)
 
 To migrate from GitHub to Gitea, you can use Gitea's [Migrator tool](https://gitea.com/gitea/migrator)
@@ -91,7 +91,7 @@ https://github.com/loganinak/MigrateGitlabToGogs
 ## Not seeing a clone URL or the clone URL being incorrect
 There are a few places that could make this show incorrectly.
 
-1. If using a reverse proxy, make sure you have followed the correction directions in the [reverse proxy guide]({{< relref "doc/usage/reverse-proxies.en-us.md" >}})
+1. If using a reverse proxy, make sure you have followed the correction directions in the [reverse proxy guide]({{< relref "/doc/usage/reverse-proxies.en-us.md" >}})
 2. Make sure you have correctly set `ROOT_URL` in the `server` section of your `app.ini`
 
 If certain clone options aren't showing up (HTTP/S or SSH), the following options can be checked in your `app.ini`
@@ -108,19 +108,19 @@ The correct path for the template(s) will be relative to the `CustomPath`
 1. To find `CustomPath`, look for Custom File Root Path in Site Administration -> Configuration 
   * If that doesn't exist, you can try `echo $GITEA_CUSTOM`
 2. If you are still unable to find a path, the default can be [calculated above](#where-does-gitea-store-x-file)
-3. Once you have figured out the correct custom path, you can refer to the [customizing Gitea]({{< relref "doc/advanced/customizing-gitea.en-us.md" >}}) page to add your template to the correct location.
+3. Once you have figured out the correct custom path, you can refer to the [customizing Gitea]({{< relref "/doc/advanced/customizing-gitea.en-us.md" >}}) page to add your template to the correct location.
 
 ## Active user vs login prohibited user
 In Gitea, an "active" user refers to a user that has activated their account via email.  
 A "login prohibited" user is a user that is not allowed to log in to Gitea anymore
 
 ## Setting up logging 
-* [Official Docs]({{< relref "doc/advanced/logging-documentation.en-us.md" >}})
+* [Official Docs]({{< relref "/doc/advanced/logging-documentation.en-us.md" >}})
 
 ## What is Swagger?
 [Swagger](https://swagger.io/) is what Gitea uses for its API.  
 All Gitea instances have the built-in API, though it can be disabled by setting `ENABLE_SWAGGER` to `false` in the `api` section of your `app.ini`  
-For more information, refer to Gitea's [API docs]({{< relref "doc/advanced/api-usage.en-us.md" >}})
+For more information, refer to Gitea's [API docs]({{< relref "/doc/advanced/api-usage.en-us.md" >}})
 
 [Swagger Example](https://try.gitea.io/api/swagger)
 
@@ -131,7 +131,7 @@ There are multiple things you can combine to prevent spammers.
 
 1. By only whitelisting certain domains with OpenID (see below)
 2. Setting `ENABLE_CAPTCHA` to `true` in your `app.ini` and properly configuring `RECAPTCHA_SECRET` and `RECAPTCHA_SITEKEY`
-3. Settings `DISABLE_REGISTRATION` to `true` and creating new users via the [CLI]({{< relref "doc/usage/command-line.en-us.md" >}}), [API]({{< relref "doc/advanced/api-usage.en-us.md" >}}), or Gitea's Admin UI  
+3. Settings `DISABLE_REGISTRATION` to `true` and creating new users via the [CLI]({{< relref "/doc/usage/command-line.en-us.md" >}}), [API]({{< relref "/doc/advanced/api-usage.en-us.md" >}}), or Gitea's Admin UI  
 
 ### Only allow/block certain email domains
 If using OpenID, you can configure `WHITELISTED_URIS` or `BLACKLISTED_URIS` in your `app.ini`  

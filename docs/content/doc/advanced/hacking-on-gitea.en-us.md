@@ -24,7 +24,7 @@ environment variable and to add the go bin directory or directories
 [GOPATH](https://github.com/golang/go/wiki/GOPATH).
 
 You will also need make.
-<a href='{{< relref "doc/advanced/make.en-us.md" >}}'>(See here how to get Make)</a>
+<a href='{{< relref "/doc/advanced/make.en-us.md" >}}'>(See here how to get Make)</a>
 
 **Note**: When executing make tasks that require external tools, like
 `make misspell-check`, Gitea will automatically download and build these as
@@ -91,8 +91,8 @@ to the Gitea sources. Otherwise, changes can't be pushed.
 ## Building Gitea (Basic)
 
 Take a look at our
-<a href='{{< relref "doc/installation/from-source.en-us.md" >}}'>instructions</a>
-for <a href='{{< relref "doc/installation/from-source.en-us.md" >}}'>building
+<a href='{{< relref "/doc/installation/from-source.en-us.md" >}}'>instructions</a>
+for <a href='{{< relref "/doc/installation/from-source.en-us.md" >}}'>building
 from source</a>.
 
 The simplest recommended way to build from source is:
@@ -196,7 +196,7 @@ OpenAPI 3 documentation.
 When creating new configuration options, it is not enough to add them to the
 `modules/setting` files. You should add information to `custom/conf/app.ini`
 and to the
-<a href='{{< relref "doc/advanced/config-cheat-sheet.en-us.md" >}}'>configuration cheat sheet</a>
+<a href='{{< relref "/doc/advanced/config-cheat-sheet.en-us.md" >}}'>configuration cheat sheet</a>
 found in `docs/content/doc/advanced/config-cheat-sheet.en-us.md`
 
 ### Changing the logo

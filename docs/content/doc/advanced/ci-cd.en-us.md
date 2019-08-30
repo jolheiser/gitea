@@ -17,15 +17,14 @@ menu:
 
 **NOTE:** These tools are not endorsed by Gitea. They are listed here for convenience only.
 
-## Listing
+*This is by no means a complete list, so feel free to ask about adding more!*
 
-CI/CD solutions that have integration with Gitea. Following list is not complete,
-the purpose is to give a starting point to integrate a CI/CD process with your Gitea instance.
+### Full Integration 
 
  - [Drone](https://drone.io) with [Gitea documentation](https://docs.drone.io/installation/gitea/)
  - [Jenkins](https://jenkins.io/) with [Gitea plugin](https://plugins.jenkins.io/gitea)
  - [Agola](https://agola.io)
  - [Buildkite](https://buildkite.com) with [Gitea connector](https://github.com/techknowlogick/gitea-buildkite-connector)
 
-Others CI/CD solutions that partially can be integrated with Gitea:
+### Partial Integration
  - [Concourse](https://www.concourse-ci.org), see more information at [Concourse community forum](https://discuss.concourse-ci.org/t/concourse-ci-and-gitea-oauth/1475)
