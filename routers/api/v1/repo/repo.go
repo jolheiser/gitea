@@ -255,7 +255,7 @@ func CreateUserRepo(ctx *context.APIContext, owner *models.User, opt api.CreateR
 
 // Create one repository of mine
 func Create(ctx *context.APIContext, opt api.CreateRepoOption) {
-	// swagger:operation POST /user/repos repository user createCurrentUserRepo
+	// swagger:operation POST /user/repos user createCurrentUserRepo
 	// ---
 	// summary: Create a repository
 	// consumes:
