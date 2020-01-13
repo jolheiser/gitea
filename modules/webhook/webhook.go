@@ -142,7 +142,7 @@ func prepareWebhook(w *models.Webhook, repo *models.Repository, event models.Hoo
 		Payloader:   payloader,
 		HTTPMethod:  w.HTTPMethod,
 		ContentType: w.ContentType,
-		EventType:   event,
+		EventType:   event.String(),
 		IsSSL:       w.IsSSL,
 	}); err != nil {
 		return fmt.Errorf("CreateHookTask: %v", err)

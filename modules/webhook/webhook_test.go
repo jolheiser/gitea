@@ -29,7 +29,7 @@ func TestPrepareWebhooks(t *testing.T) {
 
 	repo := models.AssertExistsAndLoadBean(t, &models.Repository{ID: 1}).(*models.Repository)
 	hookTasks := []*models.HookTask{
-		{RepoID: repo.ID, HookID: 1, EventType: models.HookEventPush},
+		{RepoID: repo.ID, HookID: 1, EventType: models.HookEventPush.String()},
 	}
 	for _, hookTask := range hookTasks {
 		models.AssertNotExistsBean(t, hookTask)
@@ -45,7 +45,7 @@ func TestPrepareWebhooksBranchFilterMatch(t *testing.T) {
 
 	repo := models.AssertExistsAndLoadBean(t, &models.Repository{ID: 2}).(*models.Repository)
 	hookTasks := []*models.HookTask{
-		{RepoID: repo.ID, HookID: 4, EventType: models.HookEventPush},
+		{RepoID: repo.ID, HookID: 4, EventType: models.HookEventPush.String()},
 	}
 	for _, hookTask := range hookTasks {
 		models.AssertNotExistsBean(t, hookTask)
@@ -62,7 +62,7 @@ func TestPrepareWebhooksBranchFilterNoMatch(t *testing.T) {
 
 	repo := models.AssertExistsAndLoadBean(t, &models.Repository{ID: 2}).(*models.Repository)
 	hookTasks := []*models.HookTask{
-		{RepoID: repo.ID, HookID: 4, EventType: models.HookEventPush},
+		{RepoID: repo.ID, HookID: 4, EventType: models.HookEventPush.String()},
 	}
 	for _, hookTask := range hookTasks {
 		models.AssertNotExistsBean(t, hookTask)

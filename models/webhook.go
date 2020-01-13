@@ -297,7 +297,7 @@ func (w *Webhook) EventsArray() []string {
 
 	for _, c := range w.EventCheckers() {
 		if c.Has() {
-			events = append(events, string(c.Type))
+			events = append(events, c.Type.Name())
 		}
 	}
 	return events
@@ -563,31 +563,103 @@ func IsValidHookTaskType(name string) bool {
 }
 
 // HookEventType is the type of an hook event
-type HookEventType string
+type HookEventType int
 
 // Types of hook events
 const (
-	HookEventCreate                    HookEventType = "create"
-	HookEventDelete                    HookEventType = "delete"
-	HookEventFork                      HookEventType = "fork"
-	HookEventPush                      HookEventType = "push"
-	HookEventIssues                    HookEventType = "issues"
-	HookEventIssueAssign               HookEventType = "issue_assign"
-	HookEventIssueLabel                HookEventType = "issue_label"
-	HookEventIssueMilestone            HookEventType = "issue_milestone"
-	HookEventIssueComment              HookEventType = "issue_comment"
-	HookEventPullRequest               HookEventType = "pull_request"
-	HookEventPullRequestAssign         HookEventType = "pull_request_assign"
-	HookEventPullRequestLabel          HookEventType = "pull_request_label"
-	HookEventPullRequestMilestone      HookEventType = "pull_request_milestone"
-	HookEventPullRequestComment        HookEventType = "pull_request_comment"
-	HookEventPullRequestReviewApproved HookEventType = "pull_request_review_approved"
-	HookEventPullRequestReviewRejected HookEventType = "pull_request_review_rejected"
-	HookEventPullRequestReviewComment  HookEventType = "pull_request_review_comment"
-	HookEventPullRequestSync           HookEventType = "pull_request_sync"
-	HookEventRepository                HookEventType = "repository"
-	HookEventRelease                   HookEventType = "release"
+	HookEventCreate HookEventType = iota
+	HookEventDelete
+	HookEventFork
+	HookEventPush
+	HookEventIssues
+	HookEventIssueAssign
+	HookEventIssueLabel
+	HookEventIssueMilestone
+	HookEventIssueComment
+	HookEventPullRequest
+	HookEventPullRequestAssign
+	HookEventPullRequestLabel
+	HookEventPullRequestMilestone
+	HookEventPullRequestComment
+	HookEventPullRequestReviewApproved
+	HookEventPullRequestReviewRejected
+	HookEventPullRequestReviewComment
+	HookEventPullRequestSync
+	HookEventRepository
+	HookEventRelease
 )
+
+// Type returns HookEventType as generic type
+func (h HookEventType) Type() string {
+	switch h {
+	case HookEventCreate:
+		return "create"
+	case HookEventDelete:
+		return "delete"
+	case HookEventFork:
+		return "fork"
+	case HookEventPush:
+		return "push"
+	case HookEventIssues, HookEventIssueAssign, HookEventIssueLabel, HookEventIssueMilestone, HookEventIssueComment:
+		return "issues"
+	case HookEventPullRequest, HookEventPullRequestAssign, HookEventPullRequestLabel, HookEventPullRequestMilestone,
+		HookEventPullRequestComment, HookEventPullRequestReviewApproved, HookEventPullRequestReviewRejected,
+		HookEventPullRequestReviewComment, HookEventPullRequestSync:
+		return "pull_request"
+	case HookEventRepository:
+		return "repository"
+	case HookEventRelease:
+		return "release"
+	default:
+		return ""
+	}
+}
+
+// Name returns the JSON name of a HookEventType
+func (h HookEventType) Name() string {
+	switch h {
+	case HookEventCreate:
+		return "create"
+	case HookEventDelete:
+		return "delete"
+	case HookEventFork:
+		return "fork"
+	case HookEventPush:
+		return "push"
+	case HookEventIssues:
+		return "issues"
+	case HookEventIssueAssign:
+		return "issues_assign"
+	case HookEventIssueLabel:
+		return "issues_label"
+	case HookEventIssueMilestone:
+		return "issues_milestone"
+	case HookEventIssueComment:
+		return "issues_comment"
+	case HookEventPullRequest:
+		return "pull_request"
+	case HookEventPullRequestAssign:
+		return "pull_request_assign"
+	case HookEventPullRequestLabel:
+		return "pull_request_label"
+	case HookEventPullRequestMilestone:
+		return "pull_request_milestone"
+	case HookEventPullRequestComment:
+		return "pull_request_comment"
+	case HookEventPullRequestReviewApproved:
+		return "pull_request_review_approved"
+	case HookEventPullRequestReviewRejected:
+		return "pull_request_review_rejected"
+	case HookEventPullRequestReviewComment:
+		return "pull_request_review_comment"
+	case HookEventPullRequestSync:
+		return "pull_request_sync"
+	case HookEventRepository:
+		return "repository"
+	case HookEventRelease:
+		return "release"
+	}
+}
 
 // HookRequest represents hook task request information.
 type HookRequest struct {
@@ -614,7 +686,7 @@ type HookTask struct {
 	PayloadContent  string `xorm:"TEXT"`
 	HTTPMethod      string `xorm:"http_method"`
 	ContentType     HookContentType
-	EventType       HookEventType
+	EventType       string // HookEventType.String()
 	IsSSL           bool
 	IsDelivered     bool
 	Delivered       int64
