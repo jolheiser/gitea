@@ -1,0 +1,73 @@
+# HTTP method type
+method: POST
+
+# Fields to request in the UI
+meta:
+  # key (used in payloads) -> value (user friendly for UI)
+  target_url: Target URL
+  username: Username
+  icon_url: Icon URL
+
+# Extra headers
+# Gitea will always provide some headers, such as:
+# X-Gitea-Delivery, X-Gitea-Event, X-Gitea-Signature
+# X-Gogs-Delivery, X-Gogs-Event, X-Gogs-Signature
+# X-GitHub-Delivery, X-GitHub-Event
+headers:
+  Content-Type: application/json
+
+# Create payload
+create:
+  username: ${meta_username}
+  avatar_url: ${meta_icon_url}
+  embeds:
+    -
+      title: [${repo_full_name}] ${ref_type} ${ref_name} created
+      url: ${repo_html_url}/src/${ref_name}
+      color: bfe5bf
+      author:
+        name: ${sender_username}
+        url: ${app_url}/${sender_username}
+        icon_url: ${sender_avatar_url}
+
+# Delete payload
+delete:
+  username: ${meta_username}
+  avatar_url: ${meta_icon_url}
+  embeds:
+    -
+      title: [${repo_full_name}] ${ref_type} ${ref_name} deleted
+      url: ${repo_html_url}/src/${ref_name}
+      color: ff3232
+      author:
+        name: ${sender_username}
+        url: ${app_url}/${sender_username}
+        icon_url: ${sender_avatar_url}
+
+# Fork payload
+fork:
+  username: ${meta_username}
+  avatar_url: ${meta_icon_url}
+  embeds:
+    -
+      title: ${repo_full_name} is forked to ${fork_full_name}
+      url: ${repo_html_url}/src/${ref_name}
+      color: bfe5bf
+      author:
+        name: ${sender_username}
+        url: ${app_url}/${sender_username}
+        icon_url: ${sender_avatar_url}
+
+# Push payload
+push:
+  username: ${meta_username}
+  avatar_url: ${meta_icon_url}
+  embeds:
+    -
+      title: ${commits_length} new commit(s)
+      url: ${push_link}
+      color: bfe5bf
+      author:
+        name: ${sender_username}
+        url: ${app_url}/${sender_username}
+        icon_url: ${sender_avatar_url}
