@@ -19,8 +19,15 @@
 	<script src="{{StaticUrlPrefix}}/vendor/plugins/codemirror/addon/mode/loadmode.js"></script>
 	<script src="{{StaticUrlPrefix}}/vendor/plugins/codemirror/mode/meta.js"></script>
 	<script>
+		window.simplemde_enabled = true;
 		CodeMirror.modeURL =  "{{StaticUrlPrefix}}/vendor/plugins/codemirror/mode/%N/%N.js";
 	</script>
+	{{if and .IsSigned (not .SignedUser.SimpleMDE)}}
+		<script>
+			window.simplemde_enabled = false;
+			console.log("SimpleMDE", window.simplemde_enabled);
+		</script>
+	{{end}}
 {{end}}
 
 <!-- Third-party libraries -->

@@ -194,8 +194,8 @@ func DeleteAccount(ctx *context.Context) {
 	}
 }
 
-// UpdateUIThemePost is used to update users' specific theme
-func UpdateUIThemePost(ctx *context.Context, form auth.UpdateThemeForm) {
+// UpdateUIPreferences is used to update users' UI preferences
+func UpdateUIPreference(ctx *context.Context, form auth.UpdatePreferenceForm) {
 
 	ctx.Data["Title"] = ctx.Tr("settings")
 	ctx.Data["PageIsSettingsAccount"] = true
@@ -206,19 +206,19 @@ func UpdateUIThemePost(ctx *context.Context, form auth.UpdateThemeForm) {
 	}
 
 	if !form.IsThemeExists() {
-		ctx.Flash.Error(ctx.Tr("settings.theme_update_error"))
+		ctx.Flash.Error(ctx.Tr("settings.preference_update_error"))
 		ctx.Redirect(setting.AppSubURL + "/user/settings/account")
 		return
 	}
 
-	if err := ctx.User.UpdateTheme(form.Theme); err != nil {
-		ctx.Flash.Error(ctx.Tr("settings.theme_update_error"))
+	if err := ctx.User.UpdatePreference(form.Theme, form.SimpleMDE); err != nil {
+		ctx.Flash.Error(ctx.Tr("settings.preference_update_error"))
 		ctx.Redirect(setting.AppSubURL + "/user/settings/account")
 		return
 	}
 
-	log.Trace("Update user theme: %s", ctx.User.Name)
-	ctx.Flash.Success(ctx.Tr("settings.theme_update_success"))
+	log.Trace("Update user preferences: %s", ctx.User.Name)
+	ctx.Flash.Success(ctx.Tr("settings.preference_update_success"))
 	ctx.Redirect(setting.AppSubURL + "/user/settings/account")
 }
 

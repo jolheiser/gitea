@@ -161,6 +161,7 @@ type User struct {
 	// Preferences
 	DiffViewStyle string `xorm:"NOT NULL DEFAULT ''"`
 	Theme         string `xorm:"NOT NULL DEFAULT ''"`
+	SimpleMDE     bool   `xorm:"NOT NULL DEFAULT true"`
 }
 
 // ColorFormat writes a colored string to identify this struct
@@ -211,10 +212,11 @@ func (u *User) UpdateDiffViewStyle(style string) error {
 	return UpdateUserCols(u, "diff_view_style")
 }
 
-// UpdateTheme updates a users' theme irrespective of the site wide theme
-func (u *User) UpdateTheme(themeName string) error {
+// UpdatePreference updates a users' preferences
+func (u *User) UpdatePreference(themeName string, simplemde bool) error {
 	u.Theme = themeName
-	return UpdateUserCols(u, "theme")
+	u.SimpleMDE = simplemde
+	return UpdateUserCols(u, "theme", "simple_mde")
 }
 
 // GetEmail returns an noreply email, if the user has set to keep his

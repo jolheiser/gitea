@@ -177,6 +177,7 @@ var (
 		ReactionsMap          map[string]bool
 		SearchRepoDescription bool
 		UseServiceWorker      bool
+		EnableSimpleMDE       bool
 
 		Admin struct {
 			UserPagingNum   int
@@ -206,6 +207,7 @@ var (
 		DefaultTheme:        `gitea`,
 		Themes:              []string{`gitea`, `arc-green`},
 		Reactions:           []string{`+1`, `-1`, `laugh`, `hooray`, `confused`, `heart`, `rocket`, `eyes`},
+		EnableSimpleMDE:     true,
 		Admin: struct {
 			UserPagingNum   int
 			RepoPagingNum   int

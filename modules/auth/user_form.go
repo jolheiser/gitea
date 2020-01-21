@@ -240,18 +240,19 @@ func (f *AddEmailForm) Validate(ctx *macaron.Context, errs binding.Errors) bindi
 	return validate(errs, ctx.Data, f, ctx.Locale)
 }
 
-// UpdateThemeForm form for updating a users' theme
-type UpdateThemeForm struct {
-	Theme string `binding:"Required;MaxSize(30)"`
+// UpdatePreferenceForm form for updating a users' preferences
+type UpdatePreferenceForm struct {
+	Theme     string `binding:"Required;MaxSize(30)"`
+	SimpleMDE bool   `form:"simplemde"`
 }
 
 // Validate validates the field
-func (f *UpdateThemeForm) Validate(ctx *macaron.Context, errs binding.Errors) binding.Errors {
+func (f *UpdatePreferenceForm) Validate(ctx *macaron.Context, errs binding.Errors) binding.Errors {
 	return validate(errs, ctx.Data, f, ctx.Locale)
 }
 
 // IsThemeExists checks if the theme is a theme available in the config.
-func (f UpdateThemeForm) IsThemeExists() bool {
+func (f UpdatePreferenceForm) IsThemeExists() bool {
 	var exists bool
 
 	for _, v := range setting.UI.Themes {

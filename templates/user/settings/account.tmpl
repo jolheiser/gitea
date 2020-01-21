@@ -109,42 +109,45 @@
 		</div>
 
 		<h4 class="ui top attached header">
-			{{.i18n.Tr "settings.manage_themes"}}
+			{{.i18n.Tr "settings.manage_preferences"}}
 		</h4>
 		<div class="ui attached segment">
-			<div class="ui email list">
-				<div class="item">
-					{{.i18n.Tr "settings.theme_desc"}}
-				</div>
-
-			<form class="ui form" action="{{.Link}}/theme" method="post">
+			<form class="ui form" action="{{.Link}}/preference" method="post">
 				{{.CsrfTokenHtml}}
-					<div class="field">
-						<label for="ui">{{.i18n.Tr "settings.ui"}}</label>
-						<div class="ui selection dropdown" id="ui">
-							<input name="theme" type="hidden" value="{{.SignedUser.Theme}}">
-							<i class="dropdown icon"></i>
-							<div class="text">
-								{{range $i,$a := .AllThemes}}
-									{{if eq $.SignedUser.Theme $a}}{{$a}}{{end}}
-								{{end}}
-							</div>
-
-							<div class="menu">
+				<!-- Theme -->
+				<div class="field">
+					<label for="theme" class="poping up" data-content="{{.i18n.Tr "settings.theme_desc"}}">{{.i18n.Tr "settings.theme"}}</label>
+					<div class="ui selection dropdown" id="theme">
+						<input name="theme" type="hidden" value="{{.SignedUser.Theme}}">
+						<i class="dropdown icon"></i>
+						<div class="text">
 							{{range $i,$a := .AllThemes}}
-								<div class="item{{if eq $.SignedUser.Theme $a}} active selected{{end}}" data-value="{{$a}}">
-									{{$a}}
-								</div>
+								{{if eq $.SignedUser.Theme $a}}{{$a}}{{end}}
 							{{end}}
+						</div>
+
+						<div class="menu">
+						{{range $i,$a := .AllThemes}}
+							<div class="item{{if eq $.SignedUser.Theme $a}} active selected{{end}}" data-value="{{$a}}">
+								{{$a}}
 							</div>
+						{{end}}
 						</div>
 					</div>
+				</div>
+
+				<!-- SimpleMDE -->
+				<div class="inline field">
+					<label for="simplemde">{{.i18n.Tr "settings.simplemde"}}</label>
+					<div class="ui checkbox" id="simplemde">
+						<input name="simplemde" type="checkbox" {{if .SignedUser.SimpleMDE}}checked{{end}}>
+					</div>
+				</div>
 
 				<div class="field">
-					<button class="ui green button">{{$.i18n.Tr "settings.update_theme"}}</button>
+					<button class="ui green button">{{$.i18n.Tr "settings.update_preference"}}</button>
 				</div>
 			</form>
-			</div>
 		</div>
 		<h4 class="ui top attached warning header">
 			{{.i18n.Tr "settings.delete_account"}}
