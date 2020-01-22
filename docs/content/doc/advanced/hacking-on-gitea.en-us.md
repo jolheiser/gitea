@@ -275,6 +275,10 @@ Visual Studio Code. Look at
 [`contrib/ide/README.md`](https://github.com/go-gitea/gitea/blob/master/contrib/ide/README.md)
 for more information.
 
+## GoLand
+In order to develop/debug using GoLand, make sure the configuration sets the output directory to your source root.  
+This ensures that Gitea can find any assets it needs (templates, static content, etc.)
+
 ## Submitting PRs
 
 Once you're happy with your changes, push them up and open a pull request. It
@@ -287,7 +291,7 @@ continous integration. Take a look at our
 [`CONTRIBUTING.md`](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md)
 document.
 
-If you need more help pop on to [Discord](https://discord.gg/gitea) #Develop
+If you need more help pop on to [Discord](https://discord.gg/gitea) #develop
 and chat there.
 
 That's it! You are ready to hack on Gitea.

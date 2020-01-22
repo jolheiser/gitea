@@ -14,5 +14,5 @@ menu:
 ---
 
 # Localization
-
-## TBD
+Gitea's localization is managed on [Crowdin](https://crowdin.com/).  
+[Link to Project](https://crowdin.com/project/gitea)

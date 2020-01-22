@@ -30,5 +30,6 @@ the purpose is to give a starting point to integrate a CI/CD process with your G
  - [Buildbot](https://www.buildbot.net/) with [Gitea plugin](https://github.com/lab132/buildbot-gitea)
  
 
-Others CI/CD solutions that partially can be integrated with Gitea:
+Others CI/CD solutions that can partially be integrated with Gitea:
+
  - [Concourse](https://www.concourse-ci.org), see more information at [Concourse community forum](https://discuss.concourse-ci.org/t/concourse-ci-and-gitea-oauth/1475)

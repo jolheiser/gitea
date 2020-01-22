@@ -17,7 +17,9 @@ menu:
 
 ## "Work In Progress" pull requests
 
-Marking a pull request as being a work in progress will prevent that pull request from being accidentally merged. To mark a pull request as being a work in progress, you must prefix its title by `WIP:` or `[WIP]` (case insensitive). Those values are configurable in your `app.ini` file :
+Marking a pull request as being a work in progress will prevent that pull request from being accidentally merged. 
+To mark a pull request as being a work in progress, you must prefix its title by `WIP:` or `[WIP]` (case insensitive). 
+Those values are configurable in your `app.ini` file :
 
 ```
 [repository.pull-request]
@@ -28,4 +30,4 @@ The first value of the list will be used in helpers.
 
 ## Pull Request Templates
 
-You can find more information about pull request templates at the page [Issue and Pull Request templates](../issue-pull-request-templates).
+You can find more information about pull request templates on the [Issue and Pull Request templates]({{< relref "doc/usage/issue-pull-request-templates.en-us.md" >}}) page.

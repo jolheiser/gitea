@@ -1,6 +1,6 @@
 ---
 date: "2019-12-31T13:55:00+05:00"
-title: "Advanced: Search Engines Indexation"
+title: "Advanced: Search Engine Indexation"
 slug: "search-engines-indexation"
 weight: 30
 toc: true
@@ -8,15 +8,15 @@ draft: false
 menu:
   sidebar:
     parent: "advanced"
-    name: "Search Engines Indexation"
+    name: "Search Engine Indexation"
     weight: 60
     identifier: "search-engines-indexation"
 ---
 
-# Search engines indexation of your Gitea installation
+# Search engine indexation of your Gitea installation
 
-By default your Gitea installation will be indexed by search engines.
-If you don't want your repository to be visible for search engines read further.
+By default, your Gitea installation will be indexed by search engines.  
+If you don't want your public repositories to be visible for search engines, read further.
 
 ## Block search engines indexation using robots.txt
 

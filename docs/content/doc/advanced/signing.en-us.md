@@ -19,18 +19,17 @@ Gitea will verify GPG commit signatures in the provided tree by
 checking if the commits are signed by a key within the gitea database,
 or if the commit matches the default key for git.
 
-Keys are not checked to determine if they have expired or revoked.
+**Note:** Keys are not checked to determine if they have expired or revoked.
 Keys are also not checked with keyservers.
 
 A commit will be marked with a grey unlocked icon if no key can be
 found to verify it. If a commit is marked with a red unlocked icon,
 it is reported to be signed with a key with an id.
 
-Please note: The signer of a commit does not have to be an author or
+**Note:** The signer of a commit does not have to be an author or
 committer of a commit.
 
-This functionality requires git >= 1.7.9 but for full functionality
-this requires git >= 2.0.0.
+This functionality requires `git >= 1.7.9` at minimum, but for full functionality requires `git >= 2.0.0`.
 
 ## Automatic Signing
 
@@ -145,9 +144,10 @@ separated list.
 ## Installing and generating a GPG key for Gitea
 
 It is up to a server administrator to determine how best to install
-a signing key. Gitea generates all its commits using the server `git`
+a signing key. Gitea generates all of its commits using the server `git`
 command at present - and therefore the server `gpg` will be used for
-signing (if configured.) Administrators should review best-practices
+signing (if configured.)  
+Administrators should review best-practices
 for gpg - in particular it is probably advisable to only install a
 signing secret subkey without the master signing and certifying secret
 key.

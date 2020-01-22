@@ -20,7 +20,7 @@ in search for references. These references will be shown as links in the Issue V
 and, in some cases, produce certain _actions_.
 
 Likewise, commit messages are parsed when they are listed, and _actions_
-are can be triggered when they are pushed to the main branch.
+can be triggered when they are pushed to the main branch.
 
 To prevent the creation of unintended references, there are certain rules
 for them to be recognized. For example, they should not be included inside code
@@ -170,5 +170,5 @@ _The last section is for repositories with external issue trackers that use alph
 
 _**N/A**: not applicable._
 
-Note: automatic references between repositories with different types of issues (external vs. internal) are not fully supported
+**Note:** automatic references between repositories with different types of issues (external vs. internal) are not fully supported
 and may render invalid links.

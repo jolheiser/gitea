@@ -18,8 +18,10 @@ menu:
 Customizing Gitea is typically done using the `CustomPath` folder - by default this is
 the `custom` folder from the running directory, but may be different if your build has
 set this differently. This is the central place to override configuration settings,
-templates, etc. You can check the `CustomPath` using `gitea help`. You can also find
-the path on the _Configuration_ tab in the _Site Administration_ page. You can override
+templates, etc.  
+You can check the `CustomPath` using `gitea help`. You can also find
+the path on the _Configuration_ tab in the _Site Administration_ page.  
+You can override
 the `CustomPath` by setting either the `GITEA_CUSTOM` environment variable or by
 using the `--custom-path` option on the `gitea` binary. (The option will override the
 environment variable.)
@@ -31,7 +33,7 @@ the Linux Filesystem Standard. Gitea will attempt to create required folders, in
 
 Application settings can be found in file `CustomConf` which is by default,
 `CustomPath/conf/app.ini` but may be different if your build has set this differently.
-Again `gitea help` will allow you review this variable and you can override it using the
+Again, `gitea help` will allow you review this variable and you can override it using the
 `--config` option on the `gitea` binary.
 
 - [Quick Cheat Sheet](https://docs.gitea.io/en-us/config-cheat-sheet/)
@@ -55,7 +57,7 @@ the url `http://gitea.domain.tld/image.png`.
 
 ## Changing the default avatar
 
-Place the png image at the following path: `custom/public/img/avatar_default.png`
+Place a png image at the following path: `custom/public/img/avatar_default.png`
 
 ## Customizing Gitea pages
 
@@ -69,9 +71,9 @@ shouldn't be touched without fully understanding these components.
 
 ### Customizing startpage / homepage
 
-Copy [`home.tmpl`](https://github.com/go-gitea/gitea/blob/master/templates/home.tmpl) for your version of Gitea from `templates` to `custom/templates`.
-Edit as you wish.
-Dont forget to restart your gitea to apply the changes.
+* Copy [`home.tmpl`](https://github.com/go-gitea/gitea/blob/master/templates/home.tmpl) for your version of Gitea from `templates` to `custom/templates`.
+* Edit as you wish.
+* Dont forget to restart your gitea to apply the changes.
 
 ### Adding links and tabs
 
@@ -143,9 +145,11 @@ Mermaid will detect and use tags with `class="language-mermaid"`.
 #### Example: PlantUML
 
 You can add [PlantUML](https://plantuml.com/) support to Gitea's markdown by using a PlantUML server.
-The data is encoded and sent to the PlantUML server which generates the picture. There is an online 
+The data is encoded and sent to the PlantUML server which generates the picture.  
+There is an online 
 demo server at http://www.plantuml.com/plantuml, but if you (or your users) have sensitive data you 
-can set up your own [PlantUML server](https://plantuml.com/server) instead. To set up PlantUML rendering,
+can set up your own [PlantUML server](https://plantuml.com/server) instead.  
+To set up PlantUML rendering,
 copy javascript files from https://gitea.com/davidsvantesson/plantuml-code-highlight and put them in your
 `custom/public` folder. Then add the following to `custom/footer.tmpl`:
 
@@ -187,7 +191,7 @@ syntax and shouldn't be touched without fully understanding these components.
 
 ## Adding Analytics to Gitea
 
-Google Analytics, Matomo (previously Piwik), and other analytics services can be added to Gitea. To add the tracking code, refer to the `Other additions to the page` section of this document, and add the JavaScript to the `custom/templates/custom/header.tmpl` file.
+Google Analytics, Matomo (previously Piwik), and other analytics services can be added to Gitea. To add the tracking code, refer to the [`Other additions to the page`](#other-additions-to-the-page) section of this document, and add the JavaScript to the `custom/templates/custom/header.tmpl` file.
 
 ## Customizing gitignores, labels, licenses, locales, and readmes.
 
@@ -230,14 +234,14 @@ To add a custom Readme, add a markdown formatted file (without an `.md` extensio
 
 ### Reactions
 
-To change reaction emoji's you can set allowed reactions at app.ini
+To change available reaction emoji you can set allowed reactions in your `app.ini`
 ```
 [ui]
 REACTIONS = +1, -1, laugh, confused, heart, hooray, eyes
 ```
-A full list of supported emoji's is at [emoji list](https://gitea.com/gitea/gitea.com/issues/8)
+[Supported Emoji](https://gitea.com/gitea/gitea.com/issues/8)
 
 ## Customizing the look of Gitea
 
-As of version 1.6.0 Gitea has built-in themes. The two built-in themes are, the default theme `gitea`, and a dark theme `arc-green`. To change the look of your Gitea install change the value of `DEFAULT_THEME` in the [ui](https://docs.gitea.io/en-us/config-cheat-sheet/#ui-ui) section of `app.ini` to another one of the available options.  
-As of version 1.8.0 Gitea also has per-user themes. The list of themes a user can choose from can be configured with the `THEMES` value in the [ui](https://docs.gitea.io/en-us/config-cheat-sheet/#ui-ui) section of `app.ini` (defaults to `gitea` and `arc-green`, light and dark respectively)
+* Version 1.6.0 introduced built-in themes. The two built-in themes are, the default theme `gitea`, and a dark theme `arc-green`. To change the look of your Gitea install change the value of `DEFAULT_THEME` in the [ui](https://docs.gitea.io/en-us/config-cheat-sheet/#ui-ui) section of `app.ini` to another one of the available options.  
+* Version 1.8.0 introduced per-user themes. The list of themes a user can choose from can be configured with the `THEMES` value in the [ui](https://docs.gitea.io/en-us/config-cheat-sheet/#ui-ui) section of `app.ini` (defaults to `gitea` and `arc-green`, light and dark respectively)

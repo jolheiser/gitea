@@ -54,3 +54,7 @@ All variables must be of the form `$VAR` or `${VAR}`. To escape an expansion, us
 | TEMPLATE_HTTPS_URL   | The HTTP(S) clone link for the template repository  |
 | REPO_SSH_URL         | The SSH clone link for the generated repository     |
 | TEMPLATE_SSH_URL     | The SSH clone link for the template repository      |
+
+
+## Issue/Pull Request Templates
+[Official Docs]({{< relref "doc/usage/issue-pull-request-templates.en-us.md" >}})

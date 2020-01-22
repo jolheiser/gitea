@@ -183,4 +183,4 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 // success, do something
 ```
 
-There is a Test Delivery button in the webhook settings that allows to test the configuration as well as a list of the most Recent Deliveries.
+There is a `Test Delivery` button in the webhook settings that allows you to test the configuration as well as a list of the most Recent Deliveries.

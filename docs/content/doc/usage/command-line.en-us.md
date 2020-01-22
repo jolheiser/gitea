@@ -278,10 +278,10 @@ provided key. You should also set the value
 `SSH_CREATE_AUTHORIZED_KEYS_FILE=false` in the `[server]` section of
 `app.ini`.
 
-NB: opensshd requires the gitea program to be owned by root and not
+**Note:** opensshd requires the gitea program to be owned by root and not
 writable by group or others. The program must be specified by an absolute
-path.
-NB: Gitea must be running for this command to succeed.
+path.  
+**Note:** Gitea must be running for this command to succeed.
 
 #### migrate
 Migrates the database. This command can be used to run other commands before starting the server for the first time.  
@@ -291,16 +291,17 @@ This command is idempotent.
 Converts an existing MySQL database from utf8 to utf8mb4.
 
 #### doctor
-Diagnose the problems of current gitea instance according the given configuration.
-Currently there are a check list below:
+Diagnose problems with the current Gitea instance according to the given configuration.
 
-- Check if OpenSSH authorized_keys file id correct
-When your gitea instance support OpenSSH, your gitea instance binary path will be written to `authorized_keys` 
-when there is any public key added or changed on your gitea instance.
-Sometimes if you moved or renamed your gitea binary when upgrade and you haven't run `Update the '.ssh/authorized_keys' file with Gitea SSH keys. (Not needed for the built-in SSH server.)` on your Admin Panel. Then all pull/push via SSH will not be work.
-This check will help you to check if it works well.
+The current list of checks:
 
-For contributors, if you want to add more checks, you can wrie ad new function like `func(ctx *cli.Context) ([]string, error)` and 
+- Check if OpenSSH authorized_keys file id correct  
+   - When your Gitea instance supports OpenSSH, its binary path will be written to `authorized_keys` 
+when there is any public key added or changed by Gitea.  
+If you move or rename your Gitea binary when upgrading and forget to run `Update the '.ssh/authorized_keys' file with Gitea SSH keys. (Not needed for the built-in SSH server.)` on your Admin Panel, pulling/pushing via SSH will not be work.  
+This check will determine if such actions work.
+
+For contributors, if you want to add more checks, you can add new function like `func(ctx *cli.Context) ([]string, error)` and 
 append it to `doctor.go`.
 
 ```go
@@ -313,4 +314,4 @@ var checklist = []check{
 }
 ```
 
-This function will receive a command line context and return a list of details about the problems or error.
+This function will receive a command line context and return a list of details about the problems or errors.

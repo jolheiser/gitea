@@ -16,7 +16,8 @@ menu:
 
 # OAuth2 provider
 
-Gitea supports acting as an OAuth2 provider to allow third party applications to access its resources with the user's consent. This feature is available since release 1.8.0.
+Gitea supports acting as an OAuth2 provider to allow third party applications access to resources with the user's consent.  
+This feature was introduced in Gitea 1.8.0.
 
 ## Endpoints
 
@@ -29,10 +30,10 @@ Access Token Endpoint  | `/login/oauth/access_token`
 
 ## Supported OAuth2 Grants
 
-At the moment Gitea only supports the [**Authorization Code Grant**](https://tools.ietf.org/html/rfc6749#section-1.3.1) standard with additional support of the [Proof Key for Code Exchange (PKCE)](https://tools.ietf.org/html/rfc7636) extension.
+At the moment Gitea only supports the [**Authorization Code Grant**](https://tools.ietf.org/html/rfc6749#section-1.3.1) standard with additional support for the [Proof Key for Code Exchange (PKCE)](https://tools.ietf.org/html/rfc7636) extension.
  
 
-To use the Authorization Code Grant as a third party application it is required to register a new application via the "Settings" (`/user/settings/applications`) section of the settings.
+To use the Authorization Code Grant as a third party application, it is required to register a new application via the "Settings" (`/user/settings/applications`) section of the settings.
 
 ## Scopes
 
@@ -42,7 +43,7 @@ Currently Gitea does not support scopes (see [#4300](https://github.com/go-gitea
 
 **Note:** This example does not use PKCE.
 
-1. Redirect to user to the authorization endpoint in order to get his/her consent for accessing the resources:
+1. Redirect user to the authorization endpoint in order to get his/her consent for accessing their resources:
 
 ```curl
 https://[YOUR-GITEA-URL]/login/oauth/authorize?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI& response_type=code&state=STATE
@@ -85,7 +86,8 @@ Response:
 }
 ```
 
-The `CLIENT_SECRET` is the unique secret code generated for this application. Please note that the secret will only be visible after you created/registered the application with Gitea and cannot be recovered. If you lose the secret you must regenerate the secret via the application's settings.
+The `CLIENT_SECRET` is the unique secret code generated for this application.  
+**Note:** the secret will only be visible after you have created/registered the application with Gitea and cannot be recovered. If you lose the secret you must generate a new one via the application's settings.
 
 The `REDIRECT_URI` in the `access_token` request must match the `REDIRECT_URI` in the `authorize` request.
 

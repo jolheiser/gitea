@@ -15,7 +15,7 @@ menu:
 
 # Email setup
 
-- To use Gitea's built-in Email support, update the `app.ini` config file [mailer] section:
+- To use Gitea's built-in Email support, update the `app.ini` config file `[mailer]` section:
 
 ```ini
 [mailer]
