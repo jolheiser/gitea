@@ -12,7 +12,7 @@ import (
 	"image/png"
 	"testing"
 
-	"code.gitea.io/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/markup"
 
 	"github.com/stretchr/testify/assert"
 )

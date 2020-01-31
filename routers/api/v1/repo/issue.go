@@ -11,16 +11,16 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	issue_indexer "code.gitea.io/gitea/modules/indexer/issues"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
-	"code.gitea.io/gitea/modules/util"
-	"code.gitea.io/gitea/routers/api/v1/utils"
-	issue_service "code.gitea.io/gitea/services/issue"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	issue_indexer "github.com/jolheiser/gitea/modules/indexer/issues"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/util"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
+	issue_service "github.com/jolheiser/gitea/services/issue"
 )
 
 // SearchIssues searches for issues across the repositories that the user has access to

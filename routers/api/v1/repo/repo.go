@@ -10,16 +10,16 @@ import (
 	"net/http"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/util"
-	"code.gitea.io/gitea/modules/validation"
-	"code.gitea.io/gitea/routers/api/v1/utils"
-	repo_service "code.gitea.io/gitea/services/repository"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/validation"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
+	repo_service "github.com/jolheiser/gitea/services/repository"
 )
 
 var searchOrderByMap = map[string]map[string]models.SearchOrderBy{

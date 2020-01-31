@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"code.gitea.io/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/process"
 )
 
 // LoadPublicKeyContent will load the key from gpg

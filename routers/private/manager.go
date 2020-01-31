@@ -7,10 +7,10 @@ package private
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/private"
-	"code.gitea.io/gitea/modules/queue"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/private"
+	"github.com/jolheiser/gitea/modules/queue"
 
 	"gitea.com/macaron/macaron"
 )

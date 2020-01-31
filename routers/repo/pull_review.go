@@ -7,11 +7,11 @@ package repo
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/log"
-	pull_service "code.gitea.io/gitea/services/pull"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/log"
+	pull_service "github.com/jolheiser/gitea/services/pull"
 )
 
 // CreateCodeComment will create a code comment including an pending review if required

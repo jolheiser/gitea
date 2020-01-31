@@ -21,16 +21,16 @@ import (
 	"sync"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth/sso"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/process"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/timeutil"
-	repo_service "code.gitea.io/gitea/services/repository"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth/sso"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/timeutil"
+	repo_service "github.com/jolheiser/gitea/services/repository"
 )
 
 // HTTP implmentation git smart HTTP protocol

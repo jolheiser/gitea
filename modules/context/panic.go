@@ -19,7 +19,7 @@ package context
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 
 	"gitea.com/macaron/macaron"
 )

@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	"code.gitea.io/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/process"
 )
 
 // RawDiffType type of a raw diff.

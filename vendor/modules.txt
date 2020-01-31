@@ -247,6 +247,8 @@ github.com/jaytaylor/html2text
 github.com/jbenet/go-context/io
 # github.com/jessevdk/go-flags v1.4.0
 github.com/jessevdk/go-flags
+# github.com/jolheiser/gitea/sdk v0.0.0-00010101000000-000000000000 => ./sdk
+github.com/jolheiser/gitea/sdk
 # github.com/kballard/go-shellquote v0.0.0-20170619183022-cd60e84ee657
 github.com/kballard/go-shellquote
 # github.com/kevinburke/ssh_config v0.0.0-20190725054713-01f96b0aa0cd

@@ -7,9 +7,9 @@ package admin
 import (
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth"
-	"code.gitea.io/gitea/modules/test"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth"
+	"github.com/jolheiser/gitea/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

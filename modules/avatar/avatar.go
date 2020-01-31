@@ -14,7 +14,7 @@ import (
 	"math/rand"
 	"time"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/issue9/identicon"
 	"github.com/nfnt/resize"

@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
 
 	"github.com/stretchr/testify/assert"
 )

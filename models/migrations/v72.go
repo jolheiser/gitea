@@ -7,7 +7,7 @@ package migrations
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"xorm.io/xorm"
 )

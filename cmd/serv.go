@@ -16,11 +16,11 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/pprof"
-	"code.gitea.io/gitea/modules/private"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/pprof"
+	"github.com/jolheiser/gitea/modules/private"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/unknwon/com"

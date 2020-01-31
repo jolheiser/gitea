@@ -9,9 +9,9 @@ import (
 	"net/url"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/routers/utils"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/routers/utils"
 
 	"gitea.com/macaron/binding"
 	"gitea.com/macaron/macaron"

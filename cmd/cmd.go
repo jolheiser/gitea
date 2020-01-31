@@ -10,9 +10,9 @@ import (
 	"errors"
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/util"
 
 	"github.com/urfave/cli"
 )

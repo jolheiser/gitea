@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	mc "gitea.com/macaron/cache"
 

@@ -17,11 +17,11 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/queue"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/queue"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/jaytaylor/html2text"
 	"gopkg.in/gomail.v2"

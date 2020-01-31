@@ -10,9 +10,9 @@ import (
 	"os"
 	"path"
 
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	gouuid "github.com/satori/go.uuid"
 	"xorm.io/xorm"

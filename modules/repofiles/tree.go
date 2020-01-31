@@ -7,10 +7,10 @@ package repofiles
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // GetTreeBySHA get the GitTreeResponse of a repository using a sha hash.

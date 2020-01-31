@@ -9,14 +9,14 @@ import (
 	"context"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/migrations"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/sync"
-	mirror_service "code.gitea.io/gitea/services/mirror"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/migrations"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/sync"
+	mirror_service "github.com/jolheiser/gitea/services/mirror"
 
 	"github.com/gogs/cron"
 )

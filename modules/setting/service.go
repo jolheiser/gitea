@@ -7,7 +7,7 @@ package setting
 import (
 	"regexp"
 
-	"code.gitea.io/gitea/modules/structs"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // Service settings

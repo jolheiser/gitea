@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"testing"
 
-	"code.gitea.io/gitea/modules/test"
+	"github.com/jolheiser/gitea/modules/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/unknwon/i18n"

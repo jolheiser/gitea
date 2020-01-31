@@ -21,12 +21,12 @@ import (
 	"strconv"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/markup/external"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/routers"
-	"code.gitea.io/gitea/routers/routes"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/markup/external"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/routers"
+	"github.com/jolheiser/gitea/routers/routes"
 
 	context2 "github.com/gorilla/context"
 	"github.com/unknwon/com"

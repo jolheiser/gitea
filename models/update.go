@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/timeutil"
 )
 
 // env keys for git hooks need

@@ -8,8 +8,8 @@ package private
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"gitea.com/macaron/macaron"
 )

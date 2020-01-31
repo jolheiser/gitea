@@ -15,8 +15,8 @@ import (
 	"syscall"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // Manager manages the graceful shutdown process

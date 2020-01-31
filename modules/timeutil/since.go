@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/unknwon/i18n"
 )

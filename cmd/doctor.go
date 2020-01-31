@@ -15,9 +15,9 @@ import (
 	"regexp"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/options"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/options"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/urfave/cli"
 )

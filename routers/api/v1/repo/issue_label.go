@@ -8,10 +8,10 @@ package repo
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	api "code.gitea.io/gitea/modules/structs"
-	issue_service "code.gitea.io/gitea/services/issue"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	api "github.com/jolheiser/gitea/sdk"
+	issue_service "github.com/jolheiser/gitea/services/issue"
 )
 
 // ListIssueLabels list all the labels of an issue

@@ -8,13 +8,13 @@ package org
 import (
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	userSetting "code.gitea.io/gitea/routers/user/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	userSetting "github.com/jolheiser/gitea/routers/user/setting"
 )
 
 const (

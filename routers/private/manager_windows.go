@@ -9,7 +9,7 @@ package private
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/graceful"
 
 	"gitea.com/macaron/macaron"
 )

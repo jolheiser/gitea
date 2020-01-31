@@ -7,8 +7,8 @@ package repo
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/repofiles"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/repofiles"
 )
 
 // GetTree get the tree of a repository.

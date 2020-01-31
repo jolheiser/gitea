@@ -10,8 +10,8 @@ import (
 
 	"io"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/markup/common"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/markup/common"
 
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/ast"

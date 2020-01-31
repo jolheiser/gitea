@@ -5,8 +5,8 @@
 package issue
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification"
 )
 
 // ChangeMilestoneAssign changes assignment of milestone for issue.

@@ -9,11 +9,11 @@ import (
 	"net/http"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/test"
-	wiki_service "code.gitea.io/gitea/services/wiki"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/test"
+	wiki_service "github.com/jolheiser/gitea/services/wiki"
 
 	"github.com/stretchr/testify/assert"
 )

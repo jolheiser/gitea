@@ -7,7 +7,7 @@ package setting
 import (
 	"net/url"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 var (

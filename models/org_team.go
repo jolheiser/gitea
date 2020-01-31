@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"xorm.io/builder"
 	"xorm.io/xorm"

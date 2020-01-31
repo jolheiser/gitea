@@ -9,11 +9,11 @@ import (
 	"context"
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/migrations/base"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/migrations/base"
+	"github.com/jolheiser/gitea/modules/setting"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // MigrateOptions is equal to base.MigrateOptions

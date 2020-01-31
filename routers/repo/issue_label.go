@@ -5,12 +5,12 @@
 package repo
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/log"
-	issue_service "code.gitea.io/gitea/services/issue"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/log"
+	issue_service "github.com/jolheiser/gitea/services/issue"
 )
 
 const (

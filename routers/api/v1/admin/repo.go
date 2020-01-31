@@ -5,10 +5,10 @@
 package admin
 
 import (
-	"code.gitea.io/gitea/modules/context"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers/api/v1/repo"
-	"code.gitea.io/gitea/routers/api/v1/user"
+	"github.com/jolheiser/gitea/modules/context"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers/api/v1/repo"
+	"github.com/jolheiser/gitea/routers/api/v1/user"
 )
 
 // CreateRepo api for creating a repository

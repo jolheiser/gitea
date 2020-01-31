@@ -7,8 +7,8 @@ package models
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/log"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/modules/log"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 //UserList is a list of user.

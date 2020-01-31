@@ -10,7 +10,7 @@ import (
 	"os"
 	"time"
 
-	"code.gitea.io/gitea/modules/private"
+	"github.com/jolheiser/gitea/modules/private"
 
 	"github.com/urfave/cli"
 )

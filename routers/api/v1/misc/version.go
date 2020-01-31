@@ -7,9 +7,9 @@ package misc
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/setting"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // Version shows the version of the Gitea server

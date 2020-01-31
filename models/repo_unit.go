@@ -7,7 +7,7 @@ package models
 import (
 	"encoding/json"
 
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"github.com/unknwon/com"
 	"xorm.io/core"

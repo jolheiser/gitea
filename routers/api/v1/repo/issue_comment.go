@@ -9,11 +9,11 @@ import (
 	"errors"
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers/api/v1/utils"
-	comment_service "code.gitea.io/gitea/services/comments"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
+	comment_service "github.com/jolheiser/gitea/services/comments"
 )
 
 // ListIssueComments list all the comments of an issue

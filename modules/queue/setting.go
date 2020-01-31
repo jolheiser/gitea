@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 func validType(t string) (Type, error) {

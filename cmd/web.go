@@ -12,11 +12,11 @@ import (
 	"os"
 	"strings"
 
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/routers"
-	"code.gitea.io/gitea/routers/routes"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/routers"
+	"github.com/jolheiser/gitea/routers/routes"
 
 	context2 "github.com/gorilla/context"
 	"github.com/unknwon/com"

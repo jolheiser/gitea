@@ -9,11 +9,11 @@ import (
 	"bytes"
 	"sync"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/markup/common"
-	"code.gitea.io/gitea/modules/setting"
-	giteautil "code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/markup/common"
+	"github.com/jolheiser/gitea/modules/setting"
+	giteautil "github.com/jolheiser/gitea/modules/util"
 
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/extension"

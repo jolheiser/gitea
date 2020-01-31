@@ -5,15 +5,15 @@
 package webhook
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/convert"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/notification/base"
-	"code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/setting"
-	api "code.gitea.io/gitea/modules/structs"
-	webhook_module "code.gitea.io/gitea/modules/webhook"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/convert"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/notification/base"
+	"github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
+	webhook_module "github.com/jolheiser/gitea/modules/webhook"
 )
 
 type webhookNotifier struct {

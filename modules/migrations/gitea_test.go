@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/util"
 
 	"github.com/stretchr/testify/assert"
 )

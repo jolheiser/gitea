@@ -13,11 +13,11 @@ import (
 	"testing"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/indexer/issues"
-	"code.gitea.io/gitea/modules/references"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/test"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/indexer/issues"
+	"github.com/jolheiser/gitea/modules/references"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/test"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/stretchr/testify/assert"

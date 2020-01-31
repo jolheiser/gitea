@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // GetFileResponseFromCommit Constructs a FileResponse from a Commit object

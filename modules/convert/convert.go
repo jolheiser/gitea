@@ -8,14 +8,14 @@ import (
 	"fmt"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/structs"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/util"
-	"code.gitea.io/gitea/modules/webhook"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/markup"
+	structs "github.com/jolheiser/gitea/sdk"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/webhook"
 
 	"github.com/unknwon/com"
 )

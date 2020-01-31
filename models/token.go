@@ -9,9 +9,9 @@ import (
 	"crypto/subtle"
 	"time"
 
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/generate"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/generate"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	gouuid "github.com/satori/go.uuid"
 )

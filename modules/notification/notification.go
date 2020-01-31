@@ -5,15 +5,15 @@
 package notification
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification/action"
-	"code.gitea.io/gitea/modules/notification/base"
-	"code.gitea.io/gitea/modules/notification/indexer"
-	"code.gitea.io/gitea/modules/notification/mail"
-	"code.gitea.io/gitea/modules/notification/ui"
-	"code.gitea.io/gitea/modules/notification/webhook"
-	"code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification/action"
+	"github.com/jolheiser/gitea/modules/notification/base"
+	"github.com/jolheiser/gitea/modules/notification/indexer"
+	"github.com/jolheiser/gitea/modules/notification/mail"
+	"github.com/jolheiser/gitea/modules/notification/ui"
+	"github.com/jolheiser/gitea/modules/notification/webhook"
+	"github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 var (

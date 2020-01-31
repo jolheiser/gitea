@@ -10,10 +10,10 @@ import (
 	"sort"
 	"strings"
 
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/setting"
+	api "github.com/jolheiser/gitea/sdk"
+	structs "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"xorm.io/builder"
 )

@@ -1254,7 +1254,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.io).
   * Drop the docker Makefile from the image (#6507)
   * Add make version on gitea version (#6485)
   * Fix #6468 - Uses space match and adds newline for all sed flavors (#6473)
-  * Move code.gitea.io/git to code.gitea.io/gitea/modules/git (#6364)
+  * Move code.gitea.io/git to github.com/jolheiser/gitea/modules/git (#6364)
   * Update npm dependencies and various tweaks (#7344)
   * Fix updated drone file (#7336)
   * Add 'npm' and 'npm-update' make targets and lockfile (#7246)

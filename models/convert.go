@@ -7,7 +7,7 @@ package models
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // ConvertUtf8ToUtf8mb4 converts database and tables from utf8 to utf8mb4 if it's mysql

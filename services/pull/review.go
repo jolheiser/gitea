@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/notification"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/notification"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // CreateCodeComment creates a comment on the code line

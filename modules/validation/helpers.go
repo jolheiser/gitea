@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 var loopbackIPBlocks []*net.IPNet

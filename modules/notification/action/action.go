@@ -10,10 +10,10 @@ import (
 	"path"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/notification/base"
-	"code.gitea.io/gitea/modules/repository"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/notification/base"
+	"github.com/jolheiser/gitea/modules/repository"
 )
 
 type actionNotifier struct {

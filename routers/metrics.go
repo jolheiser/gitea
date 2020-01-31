@@ -7,8 +7,8 @@ package routers
 import (
 	"crypto/subtle"
 
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )

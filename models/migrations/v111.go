@@ -5,7 +5,7 @@
 package migrations
 
 import (
-	"code.gitea.io/gitea/models"
+	"github.com/jolheiser/gitea/models"
 
 	"xorm.io/xorm"
 )

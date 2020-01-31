@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 // urlSafeError wraps an error whose message may contain a sensitive URL

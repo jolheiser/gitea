@@ -9,15 +9,15 @@ import (
 	"errors"
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/convert"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/password"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers/api/v1/user"
-	"code.gitea.io/gitea/routers/api/v1/utils"
-	"code.gitea.io/gitea/services/mailer"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/convert"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/password"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers/api/v1/user"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
+	"github.com/jolheiser/gitea/services/mailer"
 )
 
 func parseLoginSource(ctx *context.APIContext, u *models.User, sourceID int64, loginName string) {

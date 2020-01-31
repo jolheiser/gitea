@@ -7,9 +7,9 @@ package repository
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification"
-	"code.gitea.io/gitea/modules/sync"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification"
+	"github.com/jolheiser/gitea/modules/sync"
 
 	"github.com/unknwon/com"
 )

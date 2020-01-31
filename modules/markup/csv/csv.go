@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"strings"
 
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/util"
 )
 
 var quoteRegexp = regexp.MustCompile(`["'][\s\S]+?["']`)

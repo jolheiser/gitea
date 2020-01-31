@@ -9,11 +9,11 @@ import (
 	"net/http"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
-	"code.gitea.io/gitea/routers/api/v1/utils"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
 )
 
 // ListMilestones list milestones for a repository

@@ -10,9 +10,9 @@ import (
 	"os"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	structs "github.com/jolheiser/gitea/sdk"
 
 	"github.com/unknwon/com"
 	"xorm.io/builder"

@@ -7,11 +7,11 @@ package convert
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // ToAPIPullRequest assumes following fields have been assigned with valid values:

@@ -7,7 +7,7 @@ package models
 import (
 	"time"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"xorm.io/builder"
 )

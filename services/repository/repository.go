@@ -7,11 +7,11 @@ package repository
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/notification"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	pull_service "code.gitea.io/gitea/services/pull"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/notification"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	pull_service "github.com/jolheiser/gitea/services/pull"
 )
 
 // CreateRepository creates a repository for the user/organization.

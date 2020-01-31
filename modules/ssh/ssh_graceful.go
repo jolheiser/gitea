@@ -5,8 +5,8 @@
 package ssh
 
 import (
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
 
 	"github.com/gliderlabs/ssh"
 )

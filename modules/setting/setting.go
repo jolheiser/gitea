@@ -21,10 +21,10 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/generate"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/user"
+	"github.com/jolheiser/gitea/modules/generate"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/user"
 
 	shellquote "github.com/kballard/go-shellquote"
 	version "github.com/mcuadros/go-version"

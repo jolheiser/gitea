@@ -5,7 +5,7 @@
 
 package base
 
-import "code.gitea.io/gitea/modules/structs"
+import structs "github.com/jolheiser/gitea/sdk"
 
 // MigrateOptions defines the way a repository gets migrated
 type MigrateOptions = structs.MigrateRepoOption

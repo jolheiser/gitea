@@ -4,7 +4,7 @@
 // license that can be found in the LICENSE file.
 
 // Gitea (git with a cup of tea) is a painless self-hosted Git Service.
-package main // import "code.gitea.io/gitea"
+package main // import "github.com/jolheiser/gitea"
 
 import (
 	"fmt"
@@ -12,14 +12,14 @@ import (
 	"runtime"
 	"strings"
 
-	"code.gitea.io/gitea/cmd"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/cmd"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	// register supported doc types
-	_ "code.gitea.io/gitea/modules/markup/csv"
-	_ "code.gitea.io/gitea/modules/markup/markdown"
-	_ "code.gitea.io/gitea/modules/markup/orgmode"
+	_ "github.com/jolheiser/gitea/modules/markup/csv"
+	_ "github.com/jolheiser/gitea/modules/markup/markdown"
+	_ "github.com/jolheiser/gitea/modules/markup/orgmode"
 
 	// for embed
 	_ "github.com/shurcooL/vfsgen"

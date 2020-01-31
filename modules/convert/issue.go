@@ -5,8 +5,8 @@
 package convert
 
 import (
-	"code.gitea.io/gitea/models"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // ToTrackedTime converts TrackedTime to API format

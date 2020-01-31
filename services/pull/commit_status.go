@@ -6,9 +6,9 @@
 package pull
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	structs "github.com/jolheiser/gitea/sdk"
 
 	"github.com/pkg/errors"
 )

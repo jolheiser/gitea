@@ -10,14 +10,14 @@ import (
 	"fmt"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/migrations"
-	"code.gitea.io/gitea/modules/notification"
-	"code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/migrations"
+	"github.com/jolheiser/gitea/modules/notification"
+	structs "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/util"
 )
 
 func handleCreateError(owner *models.User, err error, name string) error {

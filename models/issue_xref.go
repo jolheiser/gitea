@@ -7,8 +7,8 @@ package models
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/references"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/references"
 
 	"github.com/unknwon/com"
 	"xorm.io/xorm"

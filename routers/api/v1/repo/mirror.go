@@ -7,9 +7,9 @@ package repo
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	mirror_service "code.gitea.io/gitea/services/mirror"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	mirror_service "github.com/jolheiser/gitea/services/mirror"
 )
 
 // MirrorSync adds a mirrored repository to the sync queue

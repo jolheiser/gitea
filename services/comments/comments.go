@@ -5,8 +5,8 @@
 package comments
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification"
 )
 
 // CreateIssueComment creates a plain issue comment.

@@ -17,12 +17,12 @@ import (
 	"strings"
 	"testing"
 
-	"code.gitea.io/gitea/integrations"
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/models/migrations"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/charset"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/integrations"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/models/migrations"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/charset"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 	"xorm.io/xorm"

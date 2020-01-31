@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"time"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // Git environment variables

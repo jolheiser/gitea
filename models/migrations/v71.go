@@ -8,8 +8,8 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"code.gitea.io/gitea/modules/generate"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/generate"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"golang.org/x/crypto/pbkdf2"
 	"xorm.io/xorm"

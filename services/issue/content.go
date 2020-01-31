@@ -5,8 +5,8 @@
 package issue
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification"
 )
 
 // ChangeContent changes issue content, as the given user.

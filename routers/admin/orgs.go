@@ -6,12 +6,12 @@
 package admin
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/setting"
+	structs "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers"
 )
 
 const (

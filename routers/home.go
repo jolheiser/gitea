@@ -9,15 +9,15 @@ import (
 	"bytes"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	code_indexer "code.gitea.io/gitea/modules/indexer/code"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/util"
-	"code.gitea.io/gitea/routers/user"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	code_indexer "github.com/jolheiser/gitea/modules/indexer/code"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	structs "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/util"
+	"github.com/jolheiser/gitea/routers/user"
 )
 
 const (

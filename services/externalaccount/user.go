@@ -7,8 +7,8 @@ package externalaccount
 import (
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	structs "github.com/jolheiser/gitea/sdk"
 
 	"github.com/markbates/goth"
 )

@@ -146,7 +146,7 @@ import (
   "fmt"
 
   // local packages
-  "code.gitea.io/gitea/models"
+  "github.com/jolheiser/gitea/models"
   "code.gitea.io/sdk/gitea"
 
   // external packages

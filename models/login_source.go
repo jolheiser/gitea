@@ -15,12 +15,12 @@ import (
 	"regexp"
 	"strings"
 
-	"code.gitea.io/gitea/modules/auth/ldap"
-	"code.gitea.io/gitea/modules/auth/oauth2"
-	"code.gitea.io/gitea/modules/auth/pam"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/auth/ldap"
+	"github.com/jolheiser/gitea/modules/auth/oauth2"
+	"github.com/jolheiser/gitea/modules/auth/pam"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"github.com/unknwon/com"
 	"xorm.io/core"

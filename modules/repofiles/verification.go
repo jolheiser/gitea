@@ -5,9 +5,9 @@
 package repofiles
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // GetPayloadCommitVerification returns the verification information of a commit

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 
 	"gopkg.in/ini.v1"
 )

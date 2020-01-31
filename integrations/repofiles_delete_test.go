@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/repofiles"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/test"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/repofiles"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/test"
 
 	"github.com/stretchr/testify/assert"
 )

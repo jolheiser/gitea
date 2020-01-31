@@ -7,7 +7,7 @@ package references
 import (
 	"testing"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/stretchr/testify/assert"
 )

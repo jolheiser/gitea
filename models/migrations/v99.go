@@ -5,8 +5,8 @@
 package migrations
 
 import (
-	"code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
+	structs "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"xorm.io/xorm"
 )

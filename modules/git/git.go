@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/process"
 
 	"github.com/mcuadros/go-version"
 )

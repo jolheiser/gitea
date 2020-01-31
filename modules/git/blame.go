@@ -13,7 +13,7 @@ import (
 	"os/exec"
 	"regexp"
 
-	"code.gitea.io/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/process"
 )
 
 // BlamePart represents block of blame - continuous lines with one sha

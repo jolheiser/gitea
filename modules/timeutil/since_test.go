@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	macaroni18n "gitea.com/macaron/i18n"
 	"github.com/stretchr/testify/assert"

@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 // WrappedQueueType is the type for a wrapped delayed starting queue

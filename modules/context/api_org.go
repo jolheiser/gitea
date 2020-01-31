@@ -5,7 +5,7 @@
 package context
 
 import (
-	"code.gitea.io/gitea/models"
+	"github.com/jolheiser/gitea/models"
 )
 
 // APIOrganization contains organization and team

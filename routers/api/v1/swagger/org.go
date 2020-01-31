@@ -5,7 +5,7 @@
 package swagger
 
 import (
-	api "code.gitea.io/gitea/modules/structs"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // Organization

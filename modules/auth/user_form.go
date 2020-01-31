@@ -9,7 +9,7 @@ import (
 	"mime/multipart"
 	"strings"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"gitea.com/macaron/binding"
 	"gitea.com/macaron/macaron"

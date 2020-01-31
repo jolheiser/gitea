@@ -10,13 +10,13 @@ import (
 	"html"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/notification"
-	"code.gitea.io/gitea/modules/references"
-	"code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/notification"
+	"github.com/jolheiser/gitea/modules/references"
+	"github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // getIssueFromRef returns the issue referenced by a ref. Returns a nil *Issue

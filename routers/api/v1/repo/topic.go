@@ -8,12 +8,12 @@ import (
 	"net/http"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/convert"
-	"code.gitea.io/gitea/modules/log"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers/api/v1/utils"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/convert"
+	"github.com/jolheiser/gitea/modules/log"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers/api/v1/utils"
 )
 
 // ListTopics returns list of current topics for repo

@@ -10,12 +10,12 @@ import (
 	"net/http"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/private"
-	"code.gitea.io/gitea/modules/setting"
-	repo_service "code.gitea.io/gitea/services/repository"
-	wiki_service "code.gitea.io/gitea/services/wiki"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/private"
+	"github.com/jolheiser/gitea/modules/setting"
+	repo_service "github.com/jolheiser/gitea/services/repository"
+	wiki_service "github.com/jolheiser/gitea/services/wiki"
 
 	"gitea.com/macaron/macaron"
 )

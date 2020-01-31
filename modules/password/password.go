@@ -11,8 +11,8 @@ import (
 	"strings"
 	"sync"
 
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // complexity contains information about a particular kind of password complexity

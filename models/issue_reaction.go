@@ -8,8 +8,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"xorm.io/builder"
 	"xorm.io/xorm"

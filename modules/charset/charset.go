@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/gogs/chardet"
 	"golang.org/x/net/html/charset"

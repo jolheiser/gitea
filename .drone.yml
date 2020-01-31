@@ -8,7 +8,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 steps:
   - name: pre-build
@@ -57,7 +57,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 services:
   - name: mysql
@@ -215,7 +215,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 services:
   - name: pgsql
@@ -287,7 +287,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 trigger:
   branch:
@@ -349,7 +349,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 trigger:
   branch:
@@ -451,7 +451,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 trigger:
   event:
@@ -564,7 +564,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 depends_on:
   - testing-amd64
@@ -610,7 +610,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 depends_on:
   - compliance
@@ -643,7 +643,7 @@ platform:
 
 workspace:
   base: /go
-  path: src/code.gitea.io/gitea
+  path: src/github.com/jolheiser/gitea
 
 depends_on:
   - testing-amd64

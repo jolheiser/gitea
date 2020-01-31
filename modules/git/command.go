@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/process"
+	"github.com/jolheiser/gitea/modules/process"
 )
 
 var (

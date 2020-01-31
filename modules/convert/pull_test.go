@@ -7,7 +7,7 @@ package convert
 import (
 	"testing"
 
-	"code.gitea.io/gitea/models"
+	"github.com/jolheiser/gitea/models"
 
 	"github.com/stretchr/testify/assert"
 )

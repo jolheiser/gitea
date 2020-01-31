@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/modules/timeutil"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"github.com/stretchr/testify/assert"
 )

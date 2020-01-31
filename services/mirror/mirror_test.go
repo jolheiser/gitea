@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/structs"
-	release_service "code.gitea.io/gitea/services/release"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/sdk"
+	release_service "github.com/jolheiser/gitea/services/release"
 
 	"github.com/stretchr/testify/assert"
 )

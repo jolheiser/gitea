@@ -6,8 +6,8 @@
 package auth
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	structs "github.com/jolheiser/gitea/sdk"
 
 	"gitea.com/macaron/binding"
 	"gitea.com/macaron/macaron"

@@ -12,8 +12,8 @@ import (
 	"os"
 	"testing"
 
-	"code.gitea.io/gitea/cmd"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/cmd"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/urfave/cli"
 )

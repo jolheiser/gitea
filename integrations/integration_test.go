@@ -23,12 +23,12 @@ import (
 	"strings"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/routers"
-	"code.gitea.io/gitea/routers/routes"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/routers"
+	"github.com/jolheiser/gitea/routers/routes"
 
 	"gitea.com/macaron/macaron"
 	"github.com/PuerkitoBio/goquery"

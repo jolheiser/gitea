@@ -8,8 +8,8 @@ package models
 import (
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"xorm.io/xorm"
 )

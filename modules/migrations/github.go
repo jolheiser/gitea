@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/migrations/base"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/migrations/base"
+	structs "github.com/jolheiser/gitea/sdk"
 
 	"github.com/google/go-github/v24/github"
 	"golang.org/x/oauth2"

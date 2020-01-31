@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 // ErrFileTypeForbidden not allowed file type error

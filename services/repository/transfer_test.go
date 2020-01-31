@@ -8,9 +8,9 @@ import (
 	"sync"
 	"testing"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/notification"
-	"code.gitea.io/gitea/modules/notification/action"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/notification"
+	"github.com/jolheiser/gitea/modules/notification/action"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/unknwon/com"

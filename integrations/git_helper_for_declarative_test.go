@@ -18,9 +18,9 @@ import (
 	"testing"
 	"time"
 
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/ssh"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/ssh"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/unknwon/com"

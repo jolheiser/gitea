@@ -138,9 +138,9 @@ One option is to use a script file to shadow the `gitea` binary and create an ap
 environment before running Gitea. However, when building you can change these defaults
 using the `LDFLAGS` environment variable for `make`. The appropriate settings are as follows
 
-* To set the `CustomPath` use `LDFLAGS="-X \"code.gitea.io/gitea/modules/setting.CustomPath=custom-path\""`
-* For `CustomConf` you should use `-X \"code.gitea.io/gitea/modules/setting.CustomConf=conf.ini\"`
-* For `AppWorkPath` you should use `-X \"code.gitea.io/gitea/modules/setting.AppWorkPath=working-path\"`
+* To set the `CustomPath` use `LDFLAGS="-X \"github.com/jolheiser/gitea/modules/setting.CustomPath=custom-path\""`
+* For `CustomConf` you should use `-X \"github.com/jolheiser/gitea/modules/setting.CustomConf=conf.ini\"`
+* For `AppWorkPath` you should use `-X \"github.com/jolheiser/gitea/modules/setting.AppWorkPath=working-path\"`
 
 Add as many of the strings with their preceding `-X` to the `LDFLAGS` variable and run `make build`
 with the appropriate `TAGS` as above.

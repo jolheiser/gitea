@@ -8,11 +8,11 @@ package repo
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/convert"
-	"code.gitea.io/gitea/modules/git"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/convert"
+	"github.com/jolheiser/gitea/modules/git"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // GetBranch get a branch of a repository

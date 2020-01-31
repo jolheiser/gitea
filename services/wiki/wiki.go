@@ -11,12 +11,12 @@ import (
 	"os"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/log"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/sync"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/log"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/sync"
+	"github.com/jolheiser/gitea/modules/util"
 
 	"github.com/unknwon/com"
 )

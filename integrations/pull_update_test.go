@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/repofiles"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	pull_service "code.gitea.io/gitea/services/pull"
-	repo_service "code.gitea.io/gitea/services/repository"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/repofiles"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	pull_service "github.com/jolheiser/gitea/services/pull"
+	repo_service "github.com/jolheiser/gitea/services/repository"
 
 	"github.com/stretchr/testify/assert"
 )

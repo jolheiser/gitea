@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // UpdatePublicKeyInRepo update public key and if necessary deploy key updates

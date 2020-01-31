@@ -7,7 +7,7 @@ package issue
 import (
 	"testing"
 
-	"code.gitea.io/gitea/models"
+	"github.com/jolheiser/gitea/models"
 	"github.com/stretchr/testify/assert"
 )
 

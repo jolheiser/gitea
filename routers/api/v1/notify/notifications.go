@@ -7,9 +7,9 @@ package notify
 import (
 	"net/http"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	api "code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 // NewAvailable check if unread notifications exist

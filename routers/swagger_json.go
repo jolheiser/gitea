@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
 )
 
 // tplSwaggerV1Json swagger v1 json template

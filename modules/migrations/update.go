@@ -7,9 +7,9 @@ package migrations
 import (
 	"context"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/structs"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/log"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // UpdateMigrationPosterID updates all migrated repositories' issues and comments posterID

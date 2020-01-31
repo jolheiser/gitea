@@ -8,10 +8,10 @@ import (
 	"path"
 	"strings"
 
-	"code.gitea.io/gitea/modules/base"
-	"code.gitea.io/gitea/modules/context"
-	code_indexer "code.gitea.io/gitea/modules/indexer/code"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/base"
+	"github.com/jolheiser/gitea/modules/context"
+	code_indexer "github.com/jolheiser/gitea/modules/indexer/code"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 const tplSearch base.TplName = "repo/search"

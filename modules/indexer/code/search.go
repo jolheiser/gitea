@@ -10,8 +10,8 @@ import (
 	gotemplate "html/template"
 	"strings"
 
-	"code.gitea.io/gitea/modules/highlight"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/highlight"
+	"github.com/jolheiser/gitea/modules/util"
 )
 
 // Result a search result to display

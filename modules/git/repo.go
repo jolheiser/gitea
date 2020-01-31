@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	gitealog "code.gitea.io/gitea/modules/log"
+	gitealog "github.com/jolheiser/gitea/modules/log"
 	"github.com/unknwon/com"
 	"gopkg.in/src-d/go-billy.v4/osfs"
 	gogit "gopkg.in/src-d/go-git.v4"

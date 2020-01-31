@@ -5,7 +5,7 @@
 package webhook
 
 import (
-	api "code.gitea.io/gitea/modules/structs"
+	api "github.com/jolheiser/gitea/sdk"
 )
 
 func issueTestPayload() *api.IssuePayload {

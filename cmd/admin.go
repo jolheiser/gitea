@@ -11,14 +11,14 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth/oauth2"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
-	pwd "code.gitea.io/gitea/modules/password"
-	repo_module "code.gitea.io/gitea/modules/repository"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth/oauth2"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
+	pwd "github.com/jolheiser/gitea/modules/password"
+	repo_module "github.com/jolheiser/gitea/modules/repository"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	"github.com/urfave/cli"
 )

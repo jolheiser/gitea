@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 
 	"gitea.com/lunny/levelqueue"
 )

@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"strings"
 
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/markup/common"
-	giteautil "code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/markup/common"
+	giteautil "github.com/jolheiser/gitea/modules/util"
 
 	"github.com/yuin/goldmark/ast"
 	east "github.com/yuin/goldmark/extension/ast"

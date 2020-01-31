@@ -8,7 +8,7 @@ package models
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/git"
 )
 
 // ErrNotExist represents a non-exist error.

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 // QueueSettings represent the settings for a queue from the ini

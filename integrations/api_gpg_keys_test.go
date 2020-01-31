@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"testing"
 
-	api "code.gitea.io/gitea/modules/structs"
+	api "github.com/jolheiser/gitea/sdk"
 
 	"github.com/stretchr/testify/assert"
 )

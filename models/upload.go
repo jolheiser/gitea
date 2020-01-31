@@ -12,7 +12,7 @@ import (
 	"os"
 	"path"
 
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/setting"
 
 	gouuid "github.com/satori/go.uuid"
 	"github.com/unknwon/com"

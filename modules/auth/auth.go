@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"strings"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/auth/sso"
-	"code.gitea.io/gitea/modules/validation"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/auth/sso"
+	"github.com/jolheiser/gitea/modules/validation"
 
 	"gitea.com/macaron/binding"
 	"gitea.com/macaron/macaron"

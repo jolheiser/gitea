@@ -11,8 +11,8 @@ import (
 	"path"
 	"path/filepath"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/setting"
 )
 
 // LocalCopyPath returns the local repository temporary copy path.

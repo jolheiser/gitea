@@ -1,4 +1,4 @@
-module code.gitea.io/gitea
+module github.com/jolheiser/gitea
 
 go 1.13
 
@@ -56,6 +56,7 @@ require (
 	github.com/jaytaylor/html2text v0.0.0-20160923191438-8fb95d837f7d
 	github.com/jmhodges/levigo v1.0.0 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
+	github.com/jolheiser/gitea/sdk v0.0.0-00010101000000-000000000000
 	github.com/kballard/go-shellquote v0.0.0-20170619183022-cd60e84ee657
 	github.com/keybase/go-crypto v0.0.0-20170605145657-00ac4db533f6
 	github.com/klauspost/compress v1.9.2
@@ -116,3 +117,5 @@ require (
 	xorm.io/core v0.7.3
 	xorm.io/xorm v0.8.2-0.20200120024500-c37aff9b3a4a
 )
+
+replace github.com/jolheiser/gitea/sdk => ./sdk

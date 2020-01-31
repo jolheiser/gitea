@@ -10,12 +10,12 @@ import (
 	"net/http"
 	"time"
 
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/context"
-	"code.gitea.io/gitea/modules/git"
-	"code.gitea.io/gitea/modules/repofiles"
-	api "code.gitea.io/gitea/modules/structs"
-	"code.gitea.io/gitea/routers/repo"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/context"
+	"github.com/jolheiser/gitea/modules/git"
+	"github.com/jolheiser/gitea/modules/repofiles"
+	api "github.com/jolheiser/gitea/sdk"
+	"github.com/jolheiser/gitea/routers/repo"
 )
 
 // GetRawFile get a file by path on a repository

@@ -9,7 +9,7 @@ import (
 	"context"
 	"time"
 
-	"code.gitea.io/gitea/modules/structs"
+	structs "github.com/jolheiser/gitea/sdk"
 )
 
 // Downloader downloads the site repo informations

@@ -7,7 +7,7 @@ package models
 import (
 	"fmt"
 
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/util"
 
 	"xorm.io/xorm"
 )

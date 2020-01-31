@@ -5,8 +5,8 @@
 package base
 
 import (
-	"code.gitea.io/gitea/models"
-	"code.gitea.io/gitea/modules/repository"
+	"github.com/jolheiser/gitea/models"
+	"github.com/jolheiser/gitea/modules/repository"
 )
 
 // NullNotifier implements a blank notifier

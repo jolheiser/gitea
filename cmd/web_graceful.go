@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"net/http/fcgi"
 
-	"code.gitea.io/gitea/modules/graceful"
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/graceful"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 func runHTTP(network, listenAddr string, m http.Handler) error {

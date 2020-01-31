@@ -5,7 +5,7 @@
 package sso
 
 import (
-	"code.gitea.io/gitea/models"
+	"github.com/jolheiser/gitea/models"
 
 	"gitea.com/macaron/macaron"
 	"gitea.com/macaron/session"

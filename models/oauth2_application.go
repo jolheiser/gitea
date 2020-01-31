@@ -11,9 +11,9 @@ import (
 	"net/url"
 	"time"
 
-	"code.gitea.io/gitea/modules/secret"
-	"code.gitea.io/gitea/modules/setting"
-	"code.gitea.io/gitea/modules/timeutil"
+	"github.com/jolheiser/gitea/modules/secret"
+	"github.com/jolheiser/gitea/modules/setting"
+	"github.com/jolheiser/gitea/modules/timeutil"
 
 	"github.com/dgrijalva/jwt-go"
 	uuid "github.com/satori/go.uuid"

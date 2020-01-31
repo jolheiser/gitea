@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"code.gitea.io/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/log"
 )
 
 var manager *Manager

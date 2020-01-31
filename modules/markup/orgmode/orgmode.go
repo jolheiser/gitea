@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"html"
 
-	"code.gitea.io/gitea/modules/log"
-	"code.gitea.io/gitea/modules/markup"
-	"code.gitea.io/gitea/modules/util"
+	"github.com/jolheiser/gitea/modules/log"
+	"github.com/jolheiser/gitea/modules/markup"
+	"github.com/jolheiser/gitea/modules/util"
 
 	"github.com/niklasfasching/go-org/org"
 )
