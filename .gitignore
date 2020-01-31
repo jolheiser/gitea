@@ -83,6 +83,3 @@ prime/
 *.snap-build
 *_source.tar.bz2
 .DS_Store
-
-# SDK
-vendor/github.com/jolheiser/gitea/sdk
