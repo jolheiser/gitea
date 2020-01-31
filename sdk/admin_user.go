@@ -5,8 +5,8 @@
 
 package sdk
 
-// CreateUserOption create user options
-type CreateUserOption struct {
+// CreateUserOptions create user options
+type CreateUserOptions struct {
 	SourceID  int64  `json:"source_id"`
 	LoginName string `json:"login_name"`
 	// required: true

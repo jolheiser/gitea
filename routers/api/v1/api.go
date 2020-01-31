@@ -881,7 +881,7 @@ func RegisterRoutes(m *macaron.Macaron) {
 			m.Get("/orgs", admin.GetAllOrgs)
 			m.Group("/users", func() {
 				m.Get("", admin.GetAllUsers)
-				m.Post("", bind(api.CreateUserOption{}), admin.CreateUser)
+				m.Post("", bind(api.CreateUserOptions{}), admin.CreateUser)
 				m.Group("/:username", func() {
 					m.Combo("").Patch(bind(api.EditUserOption{}), admin.EditUser).
 						Delete(admin.DeleteUser)

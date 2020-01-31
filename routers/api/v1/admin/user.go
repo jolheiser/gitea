@@ -41,7 +41,7 @@ func parseLoginSource(ctx *context.APIContext, u *models.User, sourceID int64, l
 }
 
 // CreateUser create a user
-func CreateUser(ctx *context.APIContext, form api.CreateUserOption) {
+func CreateUser(ctx *context.APIContext, form api.CreateUserOptions) {
 	// swagger:operation POST /admin/users admin adminCreateUser
 	// ---
 	// summary: Create a user
@@ -53,7 +53,7 @@ func CreateUser(ctx *context.APIContext, form api.CreateUserOption) {
 	// - name: body
 	//   in: body
 	//   schema:
-	//     "$ref": "#/definitions/CreateUserOption"
+	//     "$ref": "#/definitions/CreateUserOptions"
 	// responses:
 	//   "201":
 	//     "$ref": "#/responses/User"
