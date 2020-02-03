@@ -32,6 +32,10 @@ if (typeof (Dropzone) !== 'undefined') {
 // Silence fomantic's error logging when tabs are used without a target content element
 $.fn.tab.settings.silent = true;
 
+// https://stackoverflow.com/a/10364620 towards the end of the solution
+const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+
 function initCommentPreviewTab($form) {
   const $tabMenu = $form.find('.tabular.menu');
   $tabMenu.find('.item').tab();
