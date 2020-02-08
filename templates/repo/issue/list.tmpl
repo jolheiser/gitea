@@ -222,6 +222,16 @@
 						<a class="ui label has-emoji" href="{{$.Link}}?q={{$.Keyword}}&type={{$.ViewType}}&state={{$.State}}&labels={{.ID}}&milestone={{$.MilestoneID}}&assignee={{$.AssigneeID}}" style="color: {{.ForegroundColor}}; background-color: {{.Color}}" title="{{.Description}}">{{.Name}}</a>
 					{{end}}
 
+					{{$numClosing := .NumClosing}}
+					{{$closingURL := .ClosingURL}}
+					{{if .IsPull}}
+						{{$numClosing = .PullRequest.NumClosing}}
+						{{$closingURL = .PullRequest.ClosingURL}}
+					{{end}}
+					{{if $numClosing}}
+						{{if $closingURL}}<a href="{{$closingURL}}">{{end}}<span class="comment ui right"><i class="octicon octicon-{{if .IsPull}}git-pull-request{{else}}issue-opened{{end}}"></i> {{$numClosing}}</span>{{if $closingURL}}</a>{{end}}
+					{{end}}
+
 					{{if .NumComments}}
 						<span class="comment ui right"><i class="octicon octicon-comment"></i> {{.NumComments}}</span>
 					{{end}}

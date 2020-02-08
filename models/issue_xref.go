@@ -334,11 +334,11 @@ func (comment *Comment) RefIssueIdent() string {
 //  |____|   |____/|____/____/____|_  /\___  >__   |____/  \___  >____  > |__|
 //                                  \/     \/   |__|           \/     \/
 
-// ResolveCrossReferences will return the list of references to close/reopen by this PR
-func (pr *PullRequest) ResolveCrossReferences() ([]*Comment, error) {
+// ResolveCrossReferences will return the list of references to close/reopen this Issue
+func (issue *Issue) ResolveCrossReferences() ([]*Comment, error) {
 	unfiltered := make([]*Comment, 0, 5)
 	if err := x.
-		Where("ref_repo_id = ? AND ref_issue_id = ?", pr.Issue.RepoID, pr.Issue.ID).
+		Where("ref_repo_id = ? AND issue_id = ?", issue.RepoID, issue.ID).
 		In("ref_action", []references.XRefAction{references.XRefActionCloses, references.XRefActionReopens}).
 		OrderBy("id").
 		Find(&unfiltered); err != nil {
@@ -351,6 +351,9 @@ func (pr *PullRequest) ResolveCrossReferences() ([]*Comment, error) {
 		for i, r := range refs {
 			if r.IssueID == ref.IssueID {
 				// Keep only the latest
+				if err := ref.loadIssue(x); err != nil {
+					return nil, err
+				}
 				refs[i] = ref
 				found = true
 				break
@@ -360,6 +363,51 @@ func (pr *PullRequest) ResolveCrossReferences() ([]*Comment, error) {
 			refs = append(refs, ref)
 		}
 	}
+
+	issue.NumClosing = len(refs)
+	if issue.NumClosing == 1 {
+		issue.ClosingURL = refs[0].RefIssueHTMLURL()
+	}
+
+	return refs, nil
+}
+
+// ResolveCrossReferences will return the list of references to close/reopen by this PR
+func (pr *PullRequest) ResolveCrossReferences() ([]*Comment, error) {
+	unfiltered := make([]*Comment, 0, 5)
+	log.Error("%#v", pr)
+	if err := x.
+		Where("ref_repo_id = ? AND ref_issue_id = ?", pr.BaseRepoID, pr.IssueID).
+		In("ref_action", []references.XRefAction{references.XRefActionCloses, references.XRefActionReopens}).
+		OrderBy("id").
+		Find(&unfiltered); err != nil {
+		return nil, fmt.Errorf("get reference: %v", err)
+	}
+
+	refs := make([]*Comment, 0, len(unfiltered))
+	for _, ref := range unfiltered {
+		found := false
+		for i, r := range refs {
+			if r.IssueID == ref.IssueID {
+				// Keep only the latest
+				if err := ref.loadIssue(x); err != nil {
+					return nil, err
+				}
+				refs[i] = ref
+				found = true
+				break
+			}
+		}
+		if !found {
+			refs = append(refs, ref)
+		}
+	}
+
+	pr.NumClosing = len(refs)
+	if pr.NumClosing == 1 {
+		pr.ClosingURL = refs[0].IssueURL()
+	}
+
 
 	return refs, nil
 }

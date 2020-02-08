@@ -66,6 +66,9 @@ type Issue struct {
 	// IsLocked limits commenting abilities to users on an issue
 	// with write access
 	IsLocked bool `xorm:"NOT NULL DEFAULT false"`
+
+	NumClosing int    `xorm:"-"`
+	ClosingURL string `xorm:"-"`
 }
 
 var (

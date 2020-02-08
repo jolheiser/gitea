@@ -228,9 +228,19 @@ func issues(ctx *context.Context, milestoneID int64, isPullOption util.OptionalB
 			return
 		}
 
+		if _, err := issues[i].ResolveCrossReferences(); err != nil {
+			ctx.ServerError("ResolveCrossReferences", err)
+			return
+		}
+
 		if issues[i].IsPull {
 			if err := issues[i].LoadPullRequest(); err != nil {
 				ctx.ServerError("LoadPullRequest", err)
+				return
+			}
+
+			if _, err := issues[i].PullRequest.ResolveCrossReferences(); err != nil {
+				ctx.ServerError("ResolveCrossReferences", err)
 				return
 			}
 

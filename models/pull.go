@@ -62,6 +62,9 @@ type PullRequest struct {
 	MergerID       int64              `xorm:"INDEX"`
 	Merger         *User              `xorm:"-"`
 	MergedUnix     timeutil.TimeStamp `xorm:"updated INDEX"`
+
+	NumClosing int    `xorm:"-"`
+	ClosingURL string `xorm:"-"`
 }
 
 // MustHeadUserName returns the HeadRepo's username if failed return blank
