@@ -452,6 +452,10 @@ func GetContents(ctx *context.APIContext) {
 	ref := ctx.QueryTrim("ref")
 
 	if fileList, err := repofiles.GetContentsOrList(ctx.Repo.Repository, treePath, ref); err != nil {
+		if git.IsErrNotExist(err) {
+			ctx.Error(http.StatusNotFound, "GetContentsOrList", err)
+			return
+		}
 		ctx.Error(http.StatusInternalServerError, "GetContentsOrList", err)
 	} else {
 		ctx.JSON(http.StatusOK, fileList)
