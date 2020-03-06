@@ -323,6 +323,10 @@ func runCreateUser(c *cli.Context) error {
 	}
 
 	if err := models.CreateUser(u); err != nil {
+		if models.IsErrUserAlreadyExist(err) {
+			fmt.Printf("User %s already exists\n", u.Name)
+			return nil
+		}
 		return fmt.Errorf("CreateUser: %v", err)
 	}
 
