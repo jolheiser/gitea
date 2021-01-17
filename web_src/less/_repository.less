@@ -1281,12 +1281,17 @@
           text-align: center;
         }
 
-        width: 175px;
+        width: 195px;
       }
     }
 
-    td.sha .sha.label {
-      margin: 0;
+    td.sha .sha {
+      &.label {
+        margin: 0;
+      }
+      &.view {
+        margin-right: 5px;
+      }
     }
 
     td.message {

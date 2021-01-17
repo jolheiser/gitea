@@ -25,6 +25,9 @@
 							{{end}}
 						</td>
 						<td class="sha">
+							{{if and $.Reponame $.FileName}}
+								<a class="ui sha view" title="{{$.i18n.Tr "repo.commits.view"}}" href="{{AppSubUrl}}/{{$.Username}}/{{$.Reponame}}/src/commit/{{.ID}}/{{$.FileName}}">{{svg "octicon-file-code"}}</a>
+							{{end}}
 							{{$class := "ui sha label"}}
 							{{if .Signature}}
 								{{$class = (printf "%s%s" $class " isSigned")}}
